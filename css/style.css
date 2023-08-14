@@ -1,0 +1,415 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+@media (max-width: 700px) {
+  .col-xs-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.info-bar {
+  width: 1200px;
+  height: 40px;
+  background-color: black;
+  padding-left: 20px;
+  line-height: 40px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.txt-bar {
+  font-size: 12px;
+  color: white;
+}
+
+.txt-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+.txt-bar i {
+  color: #06b5f6;
+  margin-right: 8px;
+}
+
+.bg-techy {
+  background-color: #06b5f6;
+  font-family: "Montserrat", sans-serif;
+  width: 1200px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.nav-link {
+  font-weight: 700;
+  color: white;
+}
+
+.btn {
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 0px;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+@media (max-width: 1010px) {
+  .info-bar {
+    width: 100%;
+    display: none;
+  }
+  .hide-moob {
+    display: none;
+  }
+  .bg-techy {
+    width: inherit;
+    margin-top: 0px;
+    padding: 0px;
+  }
+}
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+  margin-top: -40px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/bg-hero.jpg");
+}
+
+#hero .intro {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+#hero .intro h1 {
+  font-size: 51px;
+  font-weight: 700;
+}
+
+#hero .intro h1 span {
+  font-size: 117px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+#hero .form {
+  background-color: #06b5f6;
+  padding: 20px;
+}
+
+#hero .form-control {
+  border-radius: 0;
+}
+
+#hero form h1 {
+  font-size: 25px!important;
+  line-height: 1;
+  text-align: center;
+}
+
+@media (max-width: 1010px) {
+  #hero .intro h1 {
+    font-size: 40px;
+  }
+  #hero .intro h1 span {
+    font-size: 50px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+#services {
+  padding: 30px 0px;
+}
+
+#services h1 {
+  text-align: center;
+  font-size: 67px;
+  font-weight: 700;
+  margin: 60px 0px 80px 0px;
+  color: #06b5f6;
+}
+
+#services .pr-title {
+  text-align: left !important;
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 30px 0px;
+}
+
+#services .main-product-content {
+  padding-right: 30px;
+}
+
+#services .product {
+  background: linear-gradient(
+    130deg,
+    #06b5f6 0%,
+    #06b5f6 25%,
+    #363636 25%,
+    #363636 100%
+  );
+  border-radius: 25px;
+  height: 250px;
+  font-size: 16px;
+}
+
+#services .image-overflow {
+  overflow: visible;
+  margin-top: -20px;
+}
+
+#services .image-overflow img {
+  max-height: 320px;
+  max-width: 200px;
+}
+
+#services .col-lg-6 {
+  margin-bottom: 120px;
+}
+
+#services .call-to-action {
+  text-align: center;
+}
+
+@media (max-width: 1010px) {
+  #services h1 {
+    font-size: 35px;
+  }
+  #services .pr-title {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  #services .product {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+/*--------------------------------------------------------------
+# Why Choos Us
+--------------------------------------------------------------*/
+#why-choose-us {
+  padding: 30px 0px;
+  background-image: url(https://techydoral.com/wp-content/uploads/2022/07/Backgroun-experimax-blue-1.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#why-choose-us img {
+  max-width: 700px;
+}
+
+@media (max-width: 1010px) {
+  #why-choose-us img {
+    max-width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Customers Opinion
+--------------------------------------------------------------*/
+#customers-opinion {
+  padding: 80px 0px;
+  background-color: #eaeaea;
+}
+
+#customers-opinion i {
+  color: #f0ad4e;
+  font-size: 12px;
+}
+
+#customers-opinion h1 {
+  text-align: center;
+  color: #2b3e66;
+  font-weight: 800;
+}
+
+#customers-opinion p {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+#customers-opinion h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 102px;
+  height: 3px;
+  background: #2b3e66;
+  left: calc(50% - 50px);
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+#customers-opinion .customer-review {
+  background-color: #2b3e66;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#customers-opinion .customer-review .img {
+  background: #06b5f6;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: -50px;
+}
+
+#customers-opinion .customer-review .img i {
+  font-size: 30px;
+  color: white;
+  line-height: 2;
+}
+
+#customers-opinion .customer-review .stars {
+  margin-top: 10px;
+}
+
+#customers-opinion .customer-review .txt {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#customers-opinion .customer-review .name {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+# Benefits
+--------------------------------------------------------------*/
+#benefits {
+  padding: 30px 0px;
+  background-color: white;
+}
+
+#benefits h1 {
+  text-align: center;
+  font-size: 67px;
+  font-weight: 700;
+  margin: 60px 0px 80px 0px;
+  color: #06b5f6;
+}
+
+#benefits .benefit-card {
+  background-color: #06b5f6;
+  border-radius: 25px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#benefits .benefit-card .icon {
+  font-size: 30px;
+  color: #2b3e66;
+}
+
+#benefits .benefit-card .title {
+  font-size: 26px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+#benefits .benefit-card .txt {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 1010px) {
+  #benefits h1 {
+    font-size: 35px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Ubication
+--------------------------------------------------------------*/
+#ubication {
+  padding: 30px 0px;
+  background-color: #2b3e66;
+}
+
+#ubication h1 {
+  text-align: center;
+  font-size: 67px;
+  font-weight: 700;
+  margin: 60px 0px 45px 0px;
+  color: white;
+  line-height: 0.9;
+}
+
+#ubication h1 span {
+  color: #06b5f6;
+}
+
+#ubication .map {
+  width: 1200px;
+  height: 300px;
+}
+
+@media (max-width: 1010px) {
+  #ubication h1 {
+    font-size: 35px;
+  }
+  #ubication .map {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 10px 0px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}

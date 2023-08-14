@@ -1,35 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>TechyTaMiami - Coming Soon</title>
-</head>
-<body>
-  <div class="container">
-    <h1 class="logo">TechyTaMiami</h1>
-    <p class="slogan">We're launching in</p>
-    <div class="countdown">
-      <div class="countdown-item">
-        <span class="countdown-number" id="days">21</span>
-        <span class="countdown-label">Days</span>
-      </div>
-      <div class="countdown-item">
-        <span class="countdown-number" id="hours">00</span>
-        <span class="countdown-label">Hours</span>
-      </div>
-      <div class="countdown-item">
-        <span class="countdown-number" id="minutes">00</span>
-        <span class="countdown-label">Minutes</span>
-      </div>
-      <div class="countdown-item">
-        <span class="countdown-number" id="seconds">00</span>
-        <span class="countdown-label">Seconds</span>
-      </div>
-    </div>
-  </div>
-  <script src="countdown.js"></script>
-</body>
-</html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techy - Tamiami</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome/all.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=6.2.2" rel="stylesheet">
+
+    <!-- Boostrap CSS File -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="info-bar mx-auto">
+            <div class="txt-bar">
+                <i class="fa fa-map-marker-alt"></i>
+                Official Address: 1850 NW 117th Place, Suite 302, Miami Fl, 33182
+
+                <a href="tel:305-666-2660" style="margin-left: 12px;">
+                    <i class="fa fa-phone"></i>
+                    Contact Number: (305) 666-2660
+                </a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-techy fixed-top navbar-scroll mx-auto">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop device</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Buyback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hide-moob ml-auto">
+                    <a class="btn btn-dark" href="#">CALL NOW : (305) 553-2500</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1>BEST QUALITY & QUICK<br>
+                            <span style="font-weight: 700;">
+                                REPARING
+                                SERVICES</span>
+                        </h1>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form">
+                            <form>
+                                <h1 class="mb-3">REQUEST A QUOTE<br>
+                                    Financing  Available</h1>
+                                <div class="form-group mb-2">
+
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group mb-2">
+
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group mb-2">
+
+                                    <input type="number" class="form-control" id="email" placeholder="Enter your phone" required>
+                                </div>
+                                <div class="form-group mb-2">
+
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-warning mt-2">Submit Form</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1>OUR REPARING <span style="color: #2b3e66">SERVICES</span></h1>
+            <div class="row">
+
+                <div class="col-lg-6 align-items-center">
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-6 image-overflow">
+                                <img src="img/samsung.png" alt="samgsung">
+                            </div>
+                            <div class="col-lg-8 col-xs-6 text-left">
+                                <div class="main-product-content">
+                                    <h1 class="pr-title">SAMSUNG REPAIR</h1>
+                                    <P>Having Phone issues such as broken or shattered screens, water damage, jammed home buttons, or something else! Bring your phone to our expert technicians for a quick fix.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 align-items-center">
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-6  image-overflow">
+                                <img src="img/tablet.png" alt="tablet">
+                            </div>
+                            <div class="col-lg-8 col-xs-6 text-left">
+                                <div class="main-product-content" style="margin-left: 35px">
+                                    <h1 class="pr-title">SAMSUNG REPAIR</h1>
+                                    <P>Having Phone issues such as broken or shattered screens, water damage, jammed home buttons, or something else! Bring your phone to our expert technicians for a quick fix.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 align-items-center">
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-6  image-overflow">
+                                <img src="img/notebook.png" alt="notebook">
+                            </div>
+                            <div class="col-lg-8 col-xs-6 text-left">
+                                <div class="main-product-content" style="margin-left: 35px">
+                                    <h1 class="pr-title">NOTEBOOKS REPAIR</h1>
+                                    <P>Having Phone issues such as broken or shattered screens, water damage, jammed home buttons, or something else! Bring your phone to our expert technicians for a quick fix.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 align-items-center">
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-6  image-overflow">
+                                <img src="img/watch.png" alt="watch">
+                            </div>
+                            <div class="col-lg-8 col-xs-6 text-left">
+                                <div class="main-product-content" style="margin-left: 35px">
+                                    <h1 class="pr-title">WATCH REPAIR</h1>
+                                    <P>Having Phone issues such as broken or shattered screens, water damage, jammed home buttons, or something else! Bring your phone to our expert technicians for a quick fix.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 align-items-center">
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-6  image-overflow">
+                                <img src="img/ps5.png" alt="ps5">
+                            </div>
+                            <div class="col-lg-8 col-xs-6 text-left">
+                                <div class="main-product-content" style="margin-left: 35px">
+                                    <h1 class="pr-title">GAME CONSOLES</h1>
+                                    <P>Having Phone issues such as broken or shattered screens, water damage, jammed home buttons, or something else! Bring your phone to our expert technicians for a quick fix.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 align-items-center">
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-6  image-overflow">
+                                <img src="img/otherelec.png" alt="otherelec">
+                            </div>
+                            <div class="col-lg-8 col-xs-6 text-left">
+                                <div class="main-product-content" style="margin-left: 35px">
+                                    <h1 class="pr-title">OTHER ELECTRONICS</h1>
+                                    <P>Having Phone issues such as broken or shattered screens, water damage, jammed home buttons, or something else! Bring your phone to our expert technicians for a quick fix.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="call-to-action">
+                    <div class="btn btn-dark">CALL NOW: (305) 553-2500</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>WHY CHOOSE US</h1>
+                    <p>WE ARE HERE WHEN YOU NEED US,<br>GET TOP-QUALITY FIXING SERVICES</p>
+                    <p style="text-align: justify;">At Techy Miami, we are passionate about what we do and our work, and we provide the best quality of services to every repair we do. We are leaders in the industry because we give each device the same unique and special servicing we would give to our own. Our team of experts has years of experience diagnosing and repairing electronic devices and takes every opportunity to provide exceptional quality and reliable services.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/why-choose-us.jpg" alt="why-choose-us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customers-opinion">
+        <div class="container">
+            <h1>CUSTOMERS LOVE TECHY</h1>
+            <p>11,000+ Reviews <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+
+            <div class="row mt-5">
+                <div class="col-lg-4 mb-5">
+                    <div class="customer-review">
+                        <div class="img align-items-center"><i class="fa fa-user"></i></div>
+                        <div class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
+                        <div class="txt">I took my phone in for dead battery and the staff was very nice and great service. The battery was less than year old and the battery was replaced for free. I would highly recommend anyone to have their phone serviced here.</div>
+                        <div class="name">Joyce Buis</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="customer-review">
+                        <div class="img align-items-center"><i class="fa fa-user"></i></div>
+                        <div class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
+                        <div class="txt">I took my phone in for dead battery and the staff was very nice and great service. The battery was less than year old and the battery was replaced for free. I would highly recommend anyone to have their phone serviced here.</div>
+                        <div class="name">Joyce Buis</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="customer-review">
+                        <div class="img align-items-center"><i class="fa fa-user"></i></div>
+                        <div class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
+                        <div class="txt">I took my phone in for dead battery and the staff was very nice and great service. The battery was less than year old and the battery was replaced for free. I would highly recommend anyone to have their phone serviced here.</div>
+                        <div class="name">Joyce Buis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="benefits">
+        <div class="container">
+            <h1>WHAT SETS <span style="color: #2b3e66">US APART</span></h1>
+
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fa fa-user"></i></div>
+                        <div class="title">SAME DAY REPAIRS</div>
+                        <div class="txt">We offer same-day repairs because we know your time is valuable. A broken smartphone, laptop, or smartwatch can alter your plans and ruin your mood!. When the unpreventable happens.</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fa fa-user"></i></div>
+                        <div class="title">LIFETIME WARRANTY</div>
+                        <div class="txt">Our exceptional labor, as well as parts we provide, have a lifetime warranty cover. If your device seems to be having issues after we fix it, please visit us as soon as possible for warranty diagnostics.</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="benefit-card">
+                        <div class="icon"><i class="fa fa-user"></i></div>
+                        <div class="title">HIGH QUALITY PARTS</div>
+                        <div class="txt">Techy Tamiami has the highest quality parts for all of your devices. Our team of skilled technicians has valuable experience repairing all types of electronic devices.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubication">
+        <div class="container">
+            <h1>NEED DIRECTIONS? <br><span>JUST LOOK BELOW</span></h1>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14376.403109841393!2d-80.3801186!3d25.7341807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bf5b0523edd3%3A0xddab0aff593f2e75!2sTechy%20Tamiami%20-%20Electronic%20Repairs!5e0!3m2!1ses!2sar!4v1692020792533!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        All Rights Reserved © Techy 2023.
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
